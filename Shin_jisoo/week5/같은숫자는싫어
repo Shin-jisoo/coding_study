@@ -1,0 +1,14 @@
+def solution(arr):
+    answer = []
+    
+    for index,num in enumerate(arr):
+        if index == 0:
+            answer.append(num)
+            pre = num
+            continue
+            
+        if pre != num:
+            pre = num
+            answer.append(num)
+    
+    return answer
